@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351806A02193C3CC00027415 /* knockmykitchenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3518069F2193C3CC00027415 /* knockmykitchenTests.swift */; };
+		351806A82193C57E00027415 /* recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351806A72193C57E00027415 /* recipe.swift */; };
 		358DFDB12177FC95008C3E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358DFDB02177FC95008C3E68 /* AppDelegate.swift */; };
 		358DFDB32177FC95008C3E68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358DFDB22177FC95008C3E68 /* ViewController.swift */; };
 		358DFDB62177FC95008C3E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358DFDB42177FC95008C3E68 /* Main.storyboard */; };
@@ -14,7 +16,21 @@
 		358DFDBB2177FC97008C3E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358DFDB92177FC97008C3E68 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		351806A22193C3CC00027415 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 358DFDA52177FC94008C3E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 358DFDAC2177FC94008C3E68;
+			remoteInfo = knockmykitchen;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3518069D2193C3CC00027415 /* knockmykitchenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = knockmykitchenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3518069F2193C3CC00027415 /* knockmykitchenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knockmykitchenTests.swift; sourceTree = "<group>"; };
+		351806A12193C3CC00027415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		351806A72193C57E00027415 /* recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipe.swift; sourceTree = "<group>"; };
 		358DFDAD2177FC94008C3E68 /* knockmykitchen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = knockmykitchen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		358DFDB02177FC95008C3E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		358DFDB22177FC95008C3E68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3518069A2193C3CC00027415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		358DFDAA2177FC94008C3E68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +58,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3518069E2193C3CC00027415 /* knockmykitchenTests */ = {
+			isa = PBXGroup;
+			children = (
+				3518069F2193C3CC00027415 /* knockmykitchenTests.swift */,
+				351806A12193C3CC00027415 /* Info.plist */,
+			);
+			path = knockmykitchenTests;
+			sourceTree = "<group>";
+		};
 		358DFDA42177FC94008C3E68 = {
 			isa = PBXGroup;
 			children = (
+				351806A72193C57E00027415 /* recipe.swift */,
 				358DFDAF2177FC94008C3E68 /* knockmykitchen */,
+				3518069E2193C3CC00027415 /* knockmykitchenTests */,
 				358DFDAE2177FC94008C3E68 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				358DFDAD2177FC94008C3E68 /* knockmykitchen.app */,
+				3518069D2193C3CC00027415 /* knockmykitchenTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +102,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3518069C2193C3CC00027415 /* knockmykitchenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 351806A62193C3CC00027415 /* Build configuration list for PBXNativeTarget "knockmykitchenTests" */;
+			buildPhases = (
+				351806992193C3CC00027415 /* Sources */,
+				3518069A2193C3CC00027415 /* Frameworks */,
+				3518069B2193C3CC00027415 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				351806A32193C3CC00027415 /* PBXTargetDependency */,
+			);
+			name = knockmykitchenTests;
+			productName = knockmykitchenTests;
+			productReference = 3518069D2193C3CC00027415 /* knockmykitchenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		358DFDAC2177FC94008C3E68 /* knockmykitchen */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 358DFDBF2177FC97008C3E68 /* Build configuration list for PBXNativeTarget "knockmykitchen" */;
@@ -90,10 +143,14 @@
 		358DFDA52177FC94008C3E68 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Sailaja Sakthivel";
 				TargetAttributes = {
+					3518069C2193C3CC00027415 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 358DFDAC2177FC94008C3E68;
+					};
 					358DFDAC2177FC94008C3E68 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -113,11 +170,19 @@
 			projectRoot = "";
 			targets = (
 				358DFDAC2177FC94008C3E68 /* knockmykitchen */,
+				3518069C2193C3CC00027415 /* knockmykitchenTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3518069B2193C3CC00027415 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		358DFDAB2177FC94008C3E68 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,16 +196,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		351806992193C3CC00027415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351806A02193C3CC00027415 /* knockmykitchenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		358DFDA92177FC94008C3E68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351806A82193C57E00027415 /* recipe.swift in Sources */,
 				358DFDB32177FC95008C3E68 /* ViewController.swift in Sources */,
 				358DFDB12177FC95008C3E68 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		351806A32193C3CC00027415 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 358DFDAC2177FC94008C3E68 /* knockmykitchen */;
+			targetProxy = 351806A22193C3CC00027415 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		358DFDB42177FC95008C3E68 /* Main.storyboard */ = {
@@ -162,6 +244,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		351806A42193C3CC00027415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = knockmykitchenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lc101.knockmykitchenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/knockmykitchen.app/knockmykitchen";
+			};
+			name = Debug;
+		};
+		351806A52193C3CC00027415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = knockmykitchenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lc101.knockmykitchenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/knockmykitchen.app/knockmykitchen";
+			};
+			name = Release;
+		};
 		358DFDBD2177FC97008C3E68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -315,6 +437,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		351806A62193C3CC00027415 /* Build configuration list for PBXNativeTarget "knockmykitchenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				351806A42193C3CC00027415 /* Debug */,
+				351806A52193C3CC00027415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		358DFDA82177FC94008C3E68 /* Build configuration list for PBXProject "knockmykitchen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
