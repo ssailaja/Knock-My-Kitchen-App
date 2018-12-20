@@ -28,17 +28,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUL-21-Zbd" userLabel="country">
-                                                    <rect key="frame" x="145" y="12" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUL-21-Zbd" userLabel="country">
+                                                    <rect key="frame" x="90" y="11.5" width="260" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9qZ-QQ-3jf">
+                                                    <rect key="frame" x="10" y="2" width="70" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="XDc-oy-QYN"/>
+                                                        <constraint firstAttribute="height" constant="40" id="aJZ-pZ-mmI"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9qZ-QQ-3jf" firstAttribute="centerY" secondItem="ucW-3o-mlX" secondAttribute="centerY" id="7jr-60-85C"/>
+                                                <constraint firstItem="lUL-21-Zbd" firstAttribute="leading" secondItem="9qZ-QQ-3jf" secondAttribute="trailing" constant="10" id="Byp-Oy-UEJ"/>
+                                                <constraint firstItem="lUL-21-Zbd" firstAttribute="centerY" secondItem="ucW-3o-mlX" secondAttribute="centerY" id="XYN-mt-wBj"/>
+                                                <constraint firstItem="9qZ-QQ-3jf" firstAttribute="leading" secondItem="ucW-3o-mlX" secondAttribute="leading" constant="10" id="mwa-Yd-xrN"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lUL-21-Zbd" secondAttribute="trailing" constant="10" id="zro-nL-qhZ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="country" destination="lUL-21-Zbd" id="srh-c4-SZH"/>
+                                            <outlet property="flagImageView" destination="9qZ-QQ-3jf" id="iTS-6j-GV4"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

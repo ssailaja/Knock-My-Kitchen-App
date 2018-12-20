@@ -15,4 +15,10 @@ enum SortCountries: Int, CaseIterable {
         case .mexican: return "Mexican"
         }
     }
+    var imageName: String {
+        switch(self) {
+        case .italian: return "Italian"
+        case .mexican: return "Mexican"
+        }
+    }
 }

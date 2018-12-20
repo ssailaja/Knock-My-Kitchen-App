@@ -38,14 +38,16 @@ extension CountryViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let countrycell = countrylist.dequeueReusableCell(withIdentifier: "countrycell", for: indexPath ) as? CountryCell else
+        guard let countrycell = countrylist.dequeueReusableCell(withIdentifier: "countrycell", for: indexPath ) as? CountryCell,
+        let country = SortCountries(rawValue: indexPath.row) else
         {
             return UITableViewCell()
             
         }
         
-         let country = SortCountries(rawValue: indexPath.row)
-         countrycell.country.text = country?.description
+        
+         countrycell.country.text = country.description
+         countrycell.flagImageView.image = UIImage.init(named: country.imageName)
         
             return countrycell
     }
@@ -65,6 +67,7 @@ class CountryCell:UITableViewCell {
     
     @IBOutlet weak var country: UILabel!
     
+    @IBOutlet weak var flagImageView: UIImageView!
     
 }
 
