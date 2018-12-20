@@ -11,24 +11,23 @@ import UIKit
 
 
 class CountryViewController: UIViewController {
-
+    
+    var country:SortCountries?
     override func viewDidLoad() {
         super.viewDidLoad()
         countrylist.delegate = self
         countrylist.dataSource = self
-
-        // Do any additional setup after loading the view.
     }
     
     @IBOutlet weak var countrylist: UITableView!
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let vccontroller = segue.destination as? RecipeViewController else {
-            return
+        if let recipeController = segue.destination as? RecipeViewController,let country = country {
+            recipeController.recipeModel.filterdBy(country: country)
         }
-        // TODO: set navigation title to country name description
-     
-//        vccontroller.filteredRecipes = set this equal to recipes filtered by country, probably from a function on your model
     }
+    
     
     
 }
@@ -39,29 +38,33 @@ extension CountryViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let countrycell = tableView.dequeueReusableCell(withIdentifier: "countrycell", for: indexPath ) as? CountryCell else
+        guard let countrycell = countrylist.dequeueReusableCell(withIdentifier: "countrycell", for: indexPath ) as? CountryCell else
         {
             return UITableViewCell()
             
         }
         
-        let country = SortCountries(rawValue: indexPath.row)?.description
-        countrycell.countries.text = country
+         let country = SortCountries(rawValue: indexPath.row)
+         countrycell.country.text = country?.description
         
-        return countrycell
+            return countrycell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // update model, etc
+        let country = SortCountries(rawValue: indexPath.row)
+        self.country = country
+        // use the raw value initializer on SortCountries using the indexPath.row
+        // save that SortCountries on this class
         // call
-//        performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
+       performSegue(withIdentifier: "recipesegue", sender: nil)
+          //send that SortCountries object to RecipesViewController
     }
 }
 
 class CountryCell:UITableViewCell {
     
+    @IBOutlet weak var country: UILabel!
     
-    @IBOutlet weak var countries: UILabel!
     
 }
 

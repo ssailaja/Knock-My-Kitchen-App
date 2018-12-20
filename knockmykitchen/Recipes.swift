@@ -9,7 +9,8 @@
 import UIKit
 
 class RecipesModel {
-     var recipes = [DummyRecipe]()
+    var recipes = [DummyRecipe]()
+    var filteredRecipes = [DummyRecipe]()
     
     init () {
         let recipes = Generator.generateRecipe(1000)
@@ -17,15 +18,22 @@ class RecipesModel {
     }
     
     
-    func sortBy(country: SortCountries) -> [DummyRecipe] {
+    func filterdBy(country: SortCountries)  {
     
         // (in order to finish prepare for segue)
         // you need to NOT change the data in self.recipes.
         // BUT you need to take that data, and filter it.
         // return recipes where the dummyRecipe.country == country.description
         // OR? save it on the model and change this function to not return it. YOUR CHOICE.
+        filteredRecipes.removeAll()
+        
+        for dummyRecipe in recipes {
+            if dummyRecipe.country == country.description {
+                filteredRecipes.append(dummyRecipe)
+            }
+        }
      
-        return []
+        
     }
 }
 

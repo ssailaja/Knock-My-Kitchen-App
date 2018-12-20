@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		351806A02193C3CC00027415 /* knockmykitchenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3518069F2193C3CC00027415 /* knockmykitchenTests.swift */; };
-		351806A82193C57E00027415 /* recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351806A72193C57E00027415 /* recipe.swift */; };
+		351806A82193C57E00027415 /* recipeapi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351806A72193C57E00027415 /* recipeapi.swift */; };
 		3524747621B2460C00CD1C66 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3524747521B2460C00CD1C66 /* RecipeViewController.swift */; };
 		358DFDB12177FC95008C3E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358DFDB02177FC95008C3E68 /* AppDelegate.swift */; };
 		358DFDB32177FC95008C3E68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358DFDB22177FC95008C3E68 /* ViewController.swift */; };
@@ -35,7 +35,7 @@
 		3518069D2193C3CC00027415 /* knockmykitchenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = knockmykitchenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3518069F2193C3CC00027415 /* knockmykitchenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knockmykitchenTests.swift; sourceTree = "<group>"; };
 		351806A12193C3CC00027415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		351806A72193C57E00027415 /* recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipe.swift; sourceTree = "<group>"; };
+		351806A72193C57E00027415 /* recipeapi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeapi.swift; sourceTree = "<group>"; };
 		3524747521B2460C00CD1C66 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		358DFDAD2177FC94008C3E68 /* knockmykitchen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = knockmykitchen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		358DFDB02177FC95008C3E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		358DFDAF2177FC94008C3E68 /* knockmykitchen */ = {
 			isa = PBXGroup;
 			children = (
-				351806A72193C57E00027415 /* recipe.swift */,
+				351806A72193C57E00027415 /* recipeapi.swift */,
 				358DFDB02177FC95008C3E68 /* AppDelegate.swift */,
 				358DFDB22177FC95008C3E68 /* ViewController.swift */,
 				359EBA1221AF74A80056D267 /* CountryViewController.swift */,
@@ -223,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				351806A82193C57E00027415 /* recipe.swift in Sources */,
+				351806A82193C57E00027415 /* recipeapi.swift in Sources */,
 				35DA5F6721B8A774004A910C /* Generator.swift in Sources */,
 				358DFDB32177FC95008C3E68 /* ViewController.swift in Sources */,
 				35DA5F6521B6404F004A910C /* Recipes.swift in Sources */,
